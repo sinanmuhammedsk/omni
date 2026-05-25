@@ -637,7 +637,7 @@ div[data-testid="stFileUploader"] section [data-testid="stFileUploaderDropzoneIn
 
 div[data-testid="stFileUploader"] section [data-testid="stFileUploaderDropzoneInstructions"]::after,
 [data-testid="stFileUploadDropzone"] [data-testid="stFileUploaderDropzoneInstructions"]::after {{
-    content: 'Drag & drop your CV PDF here or click to browse' !important;
+    content: 'Drag & drop your PDF here or click to browse' !important;
     font-family: 'Inter', sans-serif !important;
     font-size: 0.88rem !important;
     font-weight: 500 !important;
@@ -1283,7 +1283,9 @@ def render_workspace_content(container, active_doc_status):
                     Enterprise <span>Semantic</span><br>Intelligence System
                 </h1>
                 <p class="omni-hero-subtitle">
-                    Automated parsing and analysis engine for CV portfolios.
+                    Automated parsing and analysis engine for PDF documents
+
+
                 </p>
                 """, unsafe_allow_html=True)
 
