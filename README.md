@@ -1,13 +1,44 @@
 # Omni 🌌
 
-Omni is a lightweight, local-first vector ingestion and parsing engine. It is designed to manage, process, and clear document metadata seamlessly before embedding chunks into a vector store, preventing redundant indexing and stale data.
+Omni is a lightweight, local-first vector ingestion and parsing web application built using **Streamlit**. It manages, processes, and flushes document metadata seamlessly before embedding data chunks into a vector store, ensuring your live application remains perfectly synchronized without data duplication.
+
+🚀 **Live App:** [https://t6jfcj3dumhrs8jqthynpl.streamlit.app/](https://t6jfcj3dumhrs8jqthynpl.streamlit.app/)
+
+---
 
 ## 🚀 Features
 
-- **Document Parsing & Chunking**: Effortlessly parse multi-format documents for LLM and RAG applications.
-- **Metadata Management**: Tracks file hashes, processing history, and vector storage indexing using an automated SQLite metadata catalog (`document_metadata`).
-- **Idempotent Vector Uploads**: Automatically flushes or replaces existing document chunks before fresh uploads to avoid data duplication.
-- **Local-first Architecture**: Minimal configuration required with file-based persistence.
+- **Streamlit Web UI**: Easy drag-and-drop document upload and vector parsing directly from your browser.
+- **Metadata Management**: Tracks file parsing histories, schemas, and processing loops using an automated SQLite metadata catalog (`document_metadata`).
+- **Idempotent Vector Uploads**: Cleanly purges or replaces existing document records prior to fresh indexing runs to avoid vector dilution.
+- **Deployment-Ready**: Optimized to run smoothly on local environments and serverless platforms.
+
+---
+
+## 🛠️ Tech Stack
+
+* **Frontend/UI:** Streamlit
+* **Language:** Python 3.10+
+* **Database ORM:** SQLAlchemy
+* **Database Engine:** SQLite (File-based)
+* **Vector Architecture:** [e.g., LangChain / LlamaIndex / ChromaDB]
+
+---
+
+## 💾 Installation & Local Setup
+
+To run Omni locally on your machine:
+
+```bash
+# Clone the repository
+git clone [https://github.com/sinanmuhammedsk/omni.git](https://github.com/sinanmuhammedsk/omni.git)
+cd omni
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Launch the Streamlit application
+streamlit run app.py
 
 ---
 
