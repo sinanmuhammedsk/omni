@@ -1,5 +1,9 @@
 # Omni 🌌
 
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://t6jfcj3dumhrs8jqthynpl.streamlit.app/)
+
+Omni is a lightweight, local-first vector ingestion and parsing engine...
+
 Omni is a lightweight, local-first vector ingestion and parsing web application built using **Streamlit**. It manages, processes, and flushes document metadata seamlessly before embedding data chunks into a vector store, ensuring your live application remains perfectly synchronized without data duplication.
 
 🚀 **Live App:** [https://t6jfcj3dumhrs8jqthynpl.streamlit.app/](https://t6jfcj3dumhrs8jqthynpl.streamlit.app/)
